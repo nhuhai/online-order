@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t nhuhai/online-order -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true nhuhai/online-order npm run test -- --coverage
