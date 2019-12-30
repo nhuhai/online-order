@@ -9,17 +9,18 @@ script:
   - docker run -e CI=true nhuhai/online-order npm run test -- --coverage
 
 # http://onlineorder-env.aebe6qhqxa.us-east-1.elasticbeanstalk.com/
+# http://onlineorderv2-env.mfjgmjhueb.us-east-1.elasticbeanstalk.com/
 deploy:
   edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "online-order"
-  env: "OnlineOrder-env"
+  app: "online-order-v2"
+  env: "OnlineOrderV2-env"
   bucket_name: "elasticbeanstalk-us-east-1-339579644962"
-  bucket_path: "online-order"
+  bucket_path: "online-order-v2"
   on:
     branch: master
 
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+    secure: $AWS_SECRET_KEY
