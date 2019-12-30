@@ -10,6 +10,7 @@ script:
 
 # http://onlineorder-env.aebe6qhqxa.us-east-1.elasticbeanstalk.com/
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "online-order"
