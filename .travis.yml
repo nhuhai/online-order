@@ -12,10 +12,10 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "online-order-v3"
-  env: "OnlineOrderV3-env"
+  app: "online-order-3"
+  env: "OnlineOrder3-env"
   bucket_name: "elasticbeanstalk-us-east-1-339579644962"
-  bucket_path: "online-order-v3"
+  bucket_path: "online-order-3"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
