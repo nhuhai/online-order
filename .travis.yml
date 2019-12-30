@@ -11,11 +11,11 @@ script:
 deploy:
   edge: true
   provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "online-order-3"
-  env: "OnlineOrder3-env"
-  bucket_name: "elasticbeanstalk-us-east-1-339579644962"
-  bucket_path: "online-order-3"
+  region: "us-west-1"
+  app: "online-order-v4"
+  env: "OnlineOrderV4-env"
+  bucket_name: "elasticbeanstalk-us-west-1-339579644962"
+  bucket_path: "online-order-v4"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
