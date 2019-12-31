@@ -14,6 +14,7 @@ export class ShoppingList extends React.Component {
           <li>Redux</li>
           <li>Instagram</li>
           <li>WhatsApp</li>
+          <li>GraphQL</li>
         </ul>
       </div>
     );
